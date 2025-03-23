@@ -14,7 +14,7 @@ public class DynamicInstantiation {
         // Lecture du fichier de configuration
         Scanner scanner = new Scanner(new File("config.txt"));
 
-        // L ecture des noms de classes
+        // Lecture des noms de classes
         String daoClassName = scanner.nextLine();
         String metierClassName = scanner.nextLine();
         scanner.close();
