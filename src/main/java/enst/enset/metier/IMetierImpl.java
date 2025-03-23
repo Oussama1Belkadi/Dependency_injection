@@ -7,9 +7,12 @@ public class IMetierImpl implements IMetier {
     public IMetierImpl(IDao iDao) {
         this.dao = iDao;
     }
+
+
+
     @Override
     public Double calcul(Double data) {
         double t = this.dao.getData();
-        return t/ 1.0;
+        return t/ Math.pow(data, 2);
     }
 }
